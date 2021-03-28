@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #eed6bb;
+}
+
+.img-thumbnail {
+  background-color: #166138;
+}
+
+#projects {
+  background-color: #eed6bb;
+}
+
+footer {
+  background-color: #166138;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+/* DarkMode Toogle */
+* {
+  box-sizing: border-box;
+}
+
+.label {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  width: 50px;
+  height: 26px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.bi-moon-stars-fill {
+  color: #f1c40f;
+}
+
+.bi-brightness-high-fill {
+  color: #f1c40f;
+}
+/* End DarkMode Toogle */
